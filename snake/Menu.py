@@ -50,8 +50,8 @@ class MainMenu(Menu):
             self.cursorBFS = MENU_COLOR
         elif self.state == 'DFS':
             self.cursorDFS = MENU_COLOR
-        # elif self.state == 'ASTAR':
-        #     self.cursorASTAR = MENU_COLOR
+        elif self.state == 'ASTAR':
+            self.cursorASTAR = MENU_COLOR
         # elif self.state == 'GA':
         #     self.cursorGA = MENU_COLOR
 
@@ -87,11 +87,11 @@ class MainMenu(Menu):
                 color=self.cursorDFS
             )
 
-            # self.game.draw_text(
-            #     'AStar', size=self.option_size,
-            #     x=self.ASTARx,  y=self.ASTARy,
-            #     color=self.cursorASTAR
-            # )
+            self.game.draw_text(
+                'AStar', size=self.option_size,
+                x=self.ASTARx,  y=self.ASTARy,
+                color=self.cursorASTAR
+            )
 
             # self.game.draw_text(
             #     'Genetic Algorithm', size=self.option_size,
